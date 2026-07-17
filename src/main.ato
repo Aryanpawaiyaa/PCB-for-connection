@@ -3,14 +3,14 @@
 # This file instantiates the mechanical, electrical, and routing parameters,
 # and implements the high-current distribution network mapping 6 x XT30 inputs to 1 x XT90 output.
 
-import Board from "board.ato"
-import Stackup from "stackup.ato"
-import Rules from "rules.ato"
-import Mounting from "mounting.ato"
-import XT30 from "connectors.ato"
-import XT90 from "connectors.ato"
-import Silkscreen from "silkscreen.ato"
-import Power from "power.ato"
+from "board.ato" import Board
+from "stackup.ato" import Stackup
+from "rules.ato" import Rules
+from "mounting.ato" import Mounting
+from "connectors.ato" import XT30
+from "connectors.ato" import XT90
+from "silkscreen.ato" import Silkscreen
+from "power.ato" import Power
 
 module DroneX_Battery_Carrier:
     # 1. Instantiate Mechanical Board Outline configuration

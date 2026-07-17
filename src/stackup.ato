@@ -5,15 +5,15 @@
 
 module Stackup:
     layers = 4
-    material = "FR4"
+    # material = "FR4"
     total_thickness = 1.6mm
 
     # Copper weight configuration
-    outer_copper = 2oz
-    inner_copper = 1oz
+    outer_copper = 0.07mm
+    inner_copper = 0.035mm
 
     # Layer mapping for manufacturing documentation
-    layer_1 = "Top Copper (2 oz, Signal/Power)"
-    layer_2 = "Inner 1 (1 oz, Solid Ground Plane)"
-    layer_3 = "Inner 2 (1 oz, Power Plane/Bus)"
-    layer_4 = "Bottom Copper (2 oz, Signal/Power)"
+    # layer_1 = "Top Copper (2 oz, Signal/Power)"
+    # layer_2 = "Inner 1 (1 oz, Solid Ground Plane)"
+    # layer_3 = "Inner 2 (1 oz, Power Plane/Bus)"
+    # layer_4 = "Bottom Copper (2 oz, Signal/Power)"
