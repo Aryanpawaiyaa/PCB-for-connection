@@ -1,0 +1,24 @@
+# mounting.ato
+# This file defines the mounting holes for the board.
+# Four M3 mounting holes are located 5mm offset from each corner.
+
+component MountingHoleM3:
+    footprint = "MountingHole:MountingHole_3.2mm_M3"
+    designator_prefix = "H"
+    exclude_from_bom = True
+
+module Mounting:
+    hole_diameter = 3.2mm  # Clearance for M3 screw
+    corner_offset = 5.0mm   # Offset from board edge in X and Y
+
+    # Calculated coordinate mapping relative to board (0,0) at bottom-left:
+    # board width = 50mm, board length = 100mm
+    # H1 (Bottom-Left):  x = 5mm,  y = 5mm
+    # H2 (Bottom-Right): x = 45mm, y = 5mm
+    # H3 (Top-Left):     x = 5mm,  y = 95mm
+    # H4 (Top-Right):    x = 45mm, y = 95mm
+
+    h1 = new MountingHoleM3
+    h2 = new MountingHoleM3
+    h3 = new MountingHoleM3
+    h4 = new MountingHoleM3

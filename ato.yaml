@@ -1,0 +1,4 @@
+requires-atopile: ^0.12.5
+builds:
+  default:
+    entry: src/main.ato:DroneX_Battery_Carrier

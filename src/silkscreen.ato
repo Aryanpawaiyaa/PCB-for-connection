@@ -1,0 +1,24 @@
+# silkscreen.ato
+# This file defines project metadata and silkscreen labels for documentation on the board.
+# These properties are used for visual markings, company identification, and connector polarity label reference.
+
+module Silkscreen:
+    # Project Metadata
+    project_name = "DroneX Battery Carrier"
+    version = "v1.0"
+    revision = "Rev A"
+    company = "DroneX Aerospace"
+    date = "2026-07-17"
+
+    # Polarity markings for assembly safety
+    pin1_polarity = "-" # GND flat side
+    pin2_polarity = "+" # V_BAT round side
+
+    # Silk labels for connector identification
+    j1_label = "XT30-1"
+    j2_label = "XT30-2"
+    j3_label = "XT30-3"
+    j4_label = "XT30-4"
+    j5_label = "XT30-5"
+    j6_label = "XT30-6"
+    j7_label = "XT90-OUT"

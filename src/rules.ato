@@ -1,0 +1,20 @@
+# rules.ato
+# This file defines the design rules and manufacturing constraints for the PCB.
+# The parameters comply with standard 4-layer pooling fabrication services (e.g. JLCPCB / PCBWay).
+
+module Rules:
+    # Basic design rules
+    min_trace_width = 0.15mm
+    min_clearance = 0.15mm
+    min_via_drill = 0.3mm
+    min_via_annular_ring = 0.15mm  # Results in 0.6mm via diameter (0.3mm drill + 2 * 0.15mm ring)
+    copper_to_board_edge = 0.5mm
+
+    # Application-specific high-current trace widths
+    signal_trace_width = 0.25mm
+    power_branch_width = 2.0mm     # XT30 local connections
+    power_bus_width = 10.0mm       # Combined XT90 bus trace placeholder / copper pour width
+
+    # Thermal relief configuration for heavy connector pins to prevent cold solder joints
+    thermal_spoke_width = 0.5mm
+    thermal_spokes_count = 4

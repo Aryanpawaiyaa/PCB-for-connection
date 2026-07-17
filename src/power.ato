@@ -1,0 +1,25 @@
+# power.ato
+# This file defines abstract power nets, interfaces, and electrical design constraints.
+# Chemistry: Molicel P50B (Li-ion, 3.6V nominal, 4.2V max).
+# Target Topology: 6S battery module configuration (21.6V nominal, 25.2V max).
+
+interface PowerBus:
+    signal v_bat
+    signal gnd
+
+module Power:
+    # Common distribution bus interface
+    bus = new PowerBus
+
+    # Map internal signals to the bus interface for high-level connectivity
+    signal V_BAT ~ bus.v_bat
+    signal GND ~ bus.gnd
+
+    # Declared Electrical Constraints & Placeholders for Verification
+    voltage_min = 18.0V      # 6S cut-off voltage (3.0V per cell)
+    voltage_nominal = 21.6V  # 6S nominal operating voltage (3.6V per cell)
+    voltage_max = 25.2V      # 6S charge limit voltage (4.2V per cell)
+
+    # High-current capacity expectations (placeholders for trace width calculation/DRC)
+    xt30_max_continuous_current = 30A  # Max limit per XT30 input branch
+    xt90_max_continuous_current = 90A  # Max limit for combined output bus

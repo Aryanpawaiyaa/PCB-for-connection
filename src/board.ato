@@ -1,0 +1,9 @@
+# board.ato
+# This module defines the mechanical boundary parameters for the DroneX Battery Carrier PCB.
+# The physical board layout outline and corner styling are defined here.
+
+module Board:
+    width = 50mm
+    length = 100mm
+    thickness = 1.6mm
+    corner_radius = 3mm
