@@ -1,0 +1,300 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e3f19cfe-0b97-494b-b031-aee8a512c74a")
+	(paper "A4")
+	(title_block
+		(title "1S x 6 to 6S Series Battery Combiner")
+		(date "2026-11-07")
+		(rev "1.0")
+		(company "Antigravity Hardware")
+		(comment 1 "Connects 6x 1S LiPo/Li-ion batteries in series to 6S output")
+		(comment 2 "Inputs: 6x XT30-M | Output: 1x XT60-F | Balance: 1x JST-XH 7P")
+	)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names (offset 1.016) (hide yes))
+			(exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Conn_01x02" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+			(symbol "Conn_01x02_1_1"
+				(rectangle (start -1.27 1.27) (end 1.27 -3.81) (stroke (width 0.254) (type default)) (fill (type background)))
+				(pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x07"
+			(pin_names (offset 1.016) (hide yes))
+			(exclude_from_sim no) (in_bom yes) (on_board yes)
+			(property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Conn_01x07" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+			(symbol "Conn_01x07_1_1"
+				(rectangle (start -1.27 1.27) (end 1.27 -16.51) (stroke (width 0.254) (type default)) (fill (type background)))
+				(pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -10.16 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -12.7 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at -5.08 -15.24 0) (length 3.81) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 50.80 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "aba44049-c5b1-4500-a5f5-f04522a5fcec")
+		(property "Reference" "J_BAT1" (at 50.80 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 50.80 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 50.80 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "f5ee63bd-31f0-4675-958c-4d026682c9cb"))
+		(pin "2" (uuid "5fa840bd-8961-4218-9f9a-999d8439c355"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 76.20 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "78a63a03-ed3d-453a-a573-ee57737afa0d")
+		(property "Reference" "J_BAT2" (at 76.20 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 76.20 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 76.20 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9399d38f-7dd2-4c86-b0ac-e11144b6ad0e"))
+		(pin "2" (uuid "6cf57ff4-c701-4db3-9677-d58c8d812ec5"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 101.60 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "9a9f5f8c-acbd-429b-9feb-d9a290b39ea7")
+		(property "Reference" "J_BAT3" (at 101.60 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 101.60 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 101.60 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "163b611d-668b-4cf3-9b4b-d69c8476ceb6"))
+		(pin "2" (uuid "c33b9238-2b30-45a6-a584-0b0b83202d1d"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 127.00 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "8ede69e2-c6fd-4a12-a3ce-5d7706a96725")
+		(property "Reference" "J_BAT4" (at 127.00 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 127.00 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 127.00 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "84fa8c86-c868-4e75-b184-c47301ce8b99"))
+		(pin "2" (uuid "b4954ab9-4f07-41f1-bb83-20097b05e865"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 152.40 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "e9662b49-12fd-4ac6-ac23-6205b913a9fc")
+		(property "Reference" "J_BAT5" (at 152.40 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 152.40 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 152.40 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "cfd7138e-395d-4cc6-b833-9c8cd0c4944e"))
+		(pin "2" (uuid "dc2512da-40a3-4b86-9430-3840fc93d790"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 177.80 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "f673470c-ede0-44e1-9f5b-55b399407f97")
+		(property "Reference" "J_BAT6" (at 177.80 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT30-M (1S)" (at 177.80 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical" (at 177.80 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "671811df-6dc9-4b01-8450-b62be4e89416"))
+		(pin "2" (uuid "42ba213e-50f7-4bc4-bf9e-ad55f56ec31d"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 203.20 50.8 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "fe3b6c1b-1dc4-4664-97a2-5a44eb1ac020")
+		(property "Reference" "J_OUT" (at 203.20 45.72 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "XT60-F (6S)" (at 203.20 55.88 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical" (at 203.20 50.8 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d519f934-4b17-4566-8ba9-df656ca596c8"))
+		(pin "2" (uuid "ebb28929-deb4-4298-9db3-c2644915a438"))
+	)
+
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 114.30 101.60 0)
+		(unit 1)
+		(exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+		(uuid "af15d951-35e0-4a84-acdc-93f748e3bf7c")
+		(property "Reference" "J_BAL" (at 114.30 97.79 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "JST-XH-7P (6S)" (at 114.30 120.65 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Connector_JST:JST_XH_B7B-XH-A_1x07_P2.50mm_Vertical" (at 114.30 101.60 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "7d3d0d2a-ba65-46db-9144-4a9af1ddb0bf"))
+		(pin "2" (uuid "e57f5604-35dd-4629-b46f-e5a1f938907d"))
+		(pin "3" (uuid "e659ecf2-572e-4ea7-bc21-c7a6a7536fd0"))
+		(pin "4" (uuid "75a36839-ac71-498d-9027-d06923a090e8"))
+		(pin "5" (uuid "4fc9361f-eef1-4899-8736-6bf1919a1380"))
+		(pin "6" (uuid "53abb8e0-176a-476f-af08-e25612c9c709"))
+		(pin "7" (uuid "ac36e551-1b80-44ef-9ebb-d9ab566cbafc"))
+	)
+
+	(label "GND"
+		(at 45.72 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "56f2f2b0-e207-4f2e-8eca-0d87ec609dab")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL1_POS"
+		(at 45.72 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "6c632baf-bc44-46ed-853f-82c42d730fb1")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL1_POS"
+		(at 71.12 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "04ea438d-c09b-44e6-9291-d4df17a53f85")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL2_POS"
+		(at 71.12 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "bfefbd52-e7bc-43bd-b285-70af382b1447")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL2_POS"
+		(at 96.52 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "7c7c6ee3-be24-4572-8dc6-c875e087100e")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL3_POS"
+		(at 96.52 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "24acf5d6-661e-4442-be18-a9d2338c0ff8")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL3_POS"
+		(at 121.92 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "b9707044-82cf-48fc-8359-fb95e3c2665f")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL4_POS"
+		(at 121.92 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "fd1d8d93-289e-4b24-a3bf-ce717f5715ac")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL4_POS"
+		(at 147.32 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "607fb259-b310-4e77-ade2-ec21c4263bce")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL5_POS"
+		(at 147.32 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "f6670090-0f6b-4e0a-b5aa-1c55e8d79820")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL5_POS"
+		(at 172.72 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "26687c4b-15d2-4d90-88f7-21f88aaa46c5")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "OUT_6S_POS"
+		(at 172.72 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "c2f2385a-305b-4179-9d2c-8f87acd16629")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "GND"
+		(at 198.12 50.80 180)
+		(fields_autoplaced yes)
+		(uuid "3409b323-6ab7-4baa-9677-f35e699b99f8")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "OUT_6S_POS"
+		(at 198.12 53.34 180)
+		(fields_autoplaced yes)
+		(uuid "3cadee67-924f-409d-a0ed-a5d1b50cc36b")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "GND"
+		(at 109.22 101.60 180)
+		(fields_autoplaced yes)
+		(uuid "e97457cf-03a0-4b9a-8b9e-85744ea62622")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL1_POS"
+		(at 109.22 104.14 180)
+		(fields_autoplaced yes)
+		(uuid "47f0416a-eb57-4b24-8b03-23429afd498a")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL2_POS"
+		(at 109.22 106.68 180)
+		(fields_autoplaced yes)
+		(uuid "fcd4217d-91a2-46b0-a2f7-19e0d41fe9cf")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL3_POS"
+		(at 109.22 109.22 180)
+		(fields_autoplaced yes)
+		(uuid "f9cb90fd-6b71-4e87-b1d5-cd31a49ae914")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL4_POS"
+		(at 109.22 111.76 180)
+		(fields_autoplaced yes)
+		(uuid "7b940858-b3c8-4cfe-add4-00a22490d942")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "CELL5_POS"
+		(at 109.22 114.30 180)
+		(fields_autoplaced yes)
+		(uuid "b8c284ea-0ac5-4c15-986b-4d3eb03ad028")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+
+	(label "OUT_6S_POS"
+		(at 109.22 116.84 180)
+		(fields_autoplaced yes)
+		(uuid "1e697d70-cbde-4546-8c54-28a80559930f")
+		(effects (font (size 1.27 1.27)) (justify right))
+	)
+)
